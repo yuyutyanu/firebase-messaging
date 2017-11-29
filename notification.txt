@@ -1,0 +1,10 @@
+curl -X POST -H "Authorization: key= your firebase server key " -H "Content-Type: application/json" -d '{
+  "notification": {
+    "title": "Portugal vs. Denmark",
+    "body": "5 to 1",
+    "icon": "firebase-logo.png",
+    "click_action": "http://localhost:8080"
+  },
+  "to": "register id on messaging.getToken()"
+}' "https://fcm.googleapis.com/fcm/send"
+
